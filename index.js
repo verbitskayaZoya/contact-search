@@ -5,18 +5,22 @@ const patternSearchSubmit = document.getElementById('pattern-search-submit')
 const contactDisplay = document.getElementById('contact-display')
 
 patternSearchSubmit.addEventListener("click", findMatchingContacts)
+patternSearchInput.addEventListener('focus', (e) => e.target.value = "" )
+
+
 
 function findMatchingContacts() {
     const foundContacts = contactsArr.filter(contact => {
         const inputValue = patternSearchInput.value.replace(/\b\w/g, (match) => match.toUpperCase())
         return contact.name.includes(inputValue)
     })
-    displayFoundContacts(foundContacts)
+    displayContacts(foundContacts)
 }
-function displayFoundContacts(foundContacts) {
-    if(foundContacts.length > 0) {
-       const contactsHTML = foundContacts.map(foundContact => {
-       const {name, email, phone} = foundContact
+
+function displayContacts(contacts) {
+    if(contacts.length > 0) {
+       const contactsHTML = contacts.map(contact => {
+       const {name, email, phone} = contact
             return `<aside class="contact-card"> 
                         <p> ${name} </p>
                         <p> ${email} </p>
@@ -29,3 +33,7 @@ function displayFoundContacts(foundContacts) {
     }
 }
 
+// IIFE to run all contatcs display for the first time only
+(() => {
+    displayContacts(contactsArr)
+})()
