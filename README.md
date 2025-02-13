@@ -1,6 +1,8 @@
 # Contact-search
+![Screenshot 2025-02-13 at 17 45 34](https://github.com/user-attachments/assets/3c5546af-127d-4d2e-9cc9-da64abb7d144)
+
 ## Description
-It is a completed solution for a challenge for [Advanced Javascript course pn Scrimba platform]([)](https://scrimba.com/advanced-javascript-c03kpi3kss) to implement contact search functionality.
+It is a completed solution for a challenge for [Advanced Javascript course pn Scrimba platform](https://scrimba.com/advanced-javascript-c03kpi3kss) to implement contact search functionality.
 
 ## Table of contents
 - [Features](#features)
@@ -26,7 +28,8 @@ The app displays all the data from your db and the search pattern functionality 
 2. In practising filter & map methods I used arrow functions.
 ![Screenshot 2025-02-13 at 17 42 23](https://github.com/user-attachments/assets/930badde-4f42-4cdd-8354-766b19c9b8d7)
 4. Focusing on object destructuring to make code dryer and more readable.
- ![Screenshot 2025-02-13 at 16 28 23](https://github.com/user-attachments/assets/6e35757f-13fd-4b52-9bbd-165963a90760)
+![Screenshot 2025-02-13 at 17 46 14](https://github.com/user-attachments/assets/c9b64914-7941-46a4-9894-0c8f0f196936)
+
 
 
 
